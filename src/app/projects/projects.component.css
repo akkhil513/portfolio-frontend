@@ -1,0 +1,50 @@
+.project-card {
+  display: flex;
+  background-color: #1c1c1c;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+  width: 40%;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 20px;
+  color: #fff;
+  width: 60%;
+}
+
+.project-content h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+}
+
+.project-content p {
+  margin: 0 0 15px;
+}
+
+.project-content ul {
+  margin: 0 0 15px;
+  padding: 0;
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #ff4081;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #ff6f61;
+}

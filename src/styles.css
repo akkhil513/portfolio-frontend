@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+/* Main layout styles */
+
+.main {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sidenav styles */
+.sidenav {
+  width: 250px; /* Set your desired width */
+  background-color: #1c1c1c; /* Dark background */
+  color: #fff; /* White text color */
+  display: flex;
+  flex-direction: column; /* Stack links vertically */
+  align-items: center; /* Center links */
+  padding: 20px;
+  position: fixed; /* Fix the sidenav on the left */
+  left: 0;
+  top: 0;
+  bottom: 0; /* Full height */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Add shadow */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.sidenav a {
+  padding: 15px;
+  margin: 10px 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #fff;
+  border-radius: 4px;
+  width: 100%; /* Make links fill width */
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.sidenav a:hover {
+  background-color: #ff4081; /* Highlight color on hover */
+}
+
+/* Content styles */
+.content {
+  margin-left: 250px; /* Same width as sidenav */
+  padding: 20px;
+  flex-grow: 1; /* Allow content to fill remaining space */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sidenav {
+    width: 200px; /* Adjust width for smaller screens */
+  }
+  .content {
+    margin-left: 200px;
+  }
+}
